@@ -6,11 +6,12 @@ Firstly, this template is **not** perfect and definitely can be improved.
 # Class layout
 
 So, every spells should be a class with the basic variables :
+
 Player  (Player)
 Cooldown/IsInUse (boolean)
 Remote (RemoteEvent)
 
-/Assets/SpellClass.png
+![SpellClass](/Assets/SpellClass.png)
 
 next, Each new spell is in the corresponding folder for its Race, because;
 LocalScript creates new and initializes spells according to the player character's "Race" attribute
