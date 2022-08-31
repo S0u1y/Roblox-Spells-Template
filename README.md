@@ -1,8 +1,9 @@
-# Roblox-Spells-Template
+# Roblox Spells Template
 This is a very basic template and description of its functions
 
 Firstly, this template is **not** perfect and definitely can be improved.
 
+# Class layout
 
 So, every spells should be a class with the basic variables :
 Player  (Player)
@@ -15,7 +16,7 @@ same goes for a ServerScript, which adds listeners from those spells to the serv
 both the destruction and disconnection of the class and listeners are handled by just these two scripts.
 Note, that every character needs to have a "Race" attribute set in order for their spells to load.
 
-Now to functions
+# functions
 
 **Spell.new(player) : SpellObj**
 this function creates a new object of the spell, must provide a player
@@ -39,6 +40,8 @@ The server logic, that is later connected to the listener
 **Spell.InitServer(Event) : RBXConnection**
 The initialization on the server, connects SpellServer function by the listener and returns that connection
 
+
+## End
 That would be all, if you have any questions or suggestions, don't be afraid to contact me.
 Preferably through my discord (Wizzy#8225)
 
