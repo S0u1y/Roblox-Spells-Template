@@ -16,30 +16,30 @@ both the destruction and disconnection of the class and listeners are handled by
 Note, that every character needs to have a "Race" attribute set in order for their spells to load.
 
 Now to functions
-Spell.new(player) : SpellObj
+**Spell.new(player) : SpellObj**
 this function creates a new object of the spell, must provide a player
 
-Spell:Init()
+**Spell:Init()**
 Initializes the core function of the spell, fires the remote, sets cd/InUse to true and calls self:DoSpell(self.Target)
 (Initializes as in, for the example, connects to the UserInput, etc..)
 
-Spell:DoSpell(...)
+**Spell:DoSpell(...)**
 Is what happens after the server has been fired to
 
-Spell:Destroy()
+**Spell:Destroy()**
 Simply destroys the object, disconnects all connections and (hopefully) readies it for garbage collection
 
-ConnectListeren(Event, spell, callback) : RBXConnection
+**ConnectListeren(Event, spell, callback) : RBXConnection**
 Connects a listener on server to the remote event given, if fired, checks if spell equals this listener's, if yesm then calls callback. Returns the connection which must be disconnected if it's not in use!
 
-SpellServer(player,target,isActive)
+**SpellServer(player,target,isActive)**
 The server logic, that is later connected to the listener
 
-Spell.InitServer(Event) : RBXConnection
+**Spell.InitServer(Event) : RBXConnection**
 The initialization on the server, connects SpellServer function by the listener and returns that connection
 
 That would be all, if you have any questions or suggestions, don't be afraid to contact me.
-Prefferably through my discord (Wizzy#8225)
+Preferably through my discord (Wizzy#8225)
 
 
 
