@@ -16,6 +16,7 @@ both the destruction and disconnection of the class and listeners are handled by
 Note, that every character needs to have a "Race" attribute set in order for their spells to load.
 
 Now to functions
+
 **Spell.new(player) : SpellObj**
 this function creates a new object of the spell, must provide a player
 
