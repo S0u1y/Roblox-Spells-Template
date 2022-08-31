@@ -7,10 +7,6 @@ Firstly, this template is **not** perfect and definitely can be improved.
 
 So, every spells should be a class with the basic variables :
 
-Player  (Player)
-Cooldown/IsInUse (boolean)
-Remote (RemoteEvent)
-
 ![SpellClass](/Assets/SpellClass.png)
 
 next, Each new spell is in the corresponding folder for its Race, because;
