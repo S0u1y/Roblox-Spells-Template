@@ -18,25 +18,32 @@ Note, that every character needs to have a "Race" attribute set in order for the
 # functions
 
 **Spell.new(player) : SpellObj**
+
 this function creates a new object of the spell, must provide a player
 
 **Spell:Init()**
+
 Initializes the core function of the spell, fires the remote, sets cd/InUse to true and calls self:DoSpell(self.Target)
 (Initializes as in, for the example, connects to the UserInput, etc..)
 
 **Spell:DoSpell(...)**
+
 Is what happens after the server has been fired to
 
 **Spell:Destroy()**
+
 Simply destroys the object, disconnects all connections and (hopefully) readies it for garbage collection
 
 **ConnectListeren(Event, spell, callback) : RBXConnection**
+
 Connects a listener on server to the remote event given, if fired, checks if spell equals this listener's, if yesm then calls callback. Returns the connection which must be disconnected if it's not in use!
 
 **SpellServer(player,target,isActive)**
+
 The server logic, that is later connected to the listener
 
 **Spell.InitServer(Event) : RBXConnection**
+
 The initialization on the server, connects SpellServer function by the listener and returns that connection
 
 
