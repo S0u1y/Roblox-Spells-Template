@@ -10,6 +10,8 @@ Player  (Player)
 Cooldown/IsInUse (boolean)
 Remote (RemoteEvent)
 
+/Assets/SpellClass.png
+
 next, Each new spell is in the corresponding folder for its Race, because;
 LocalScript creates new and initializes spells according to the player character's "Race" attribute
 same goes for a ServerScript, which adds listeners from those spells to the server
