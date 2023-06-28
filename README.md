@@ -49,7 +49,7 @@ The initialization on the server, connects SpellServer function by the listener 
 
 ## End
 That would be all, if you have any questions or suggestions, don't be afraid to contact me.
-Preferably through my discord (Wizzy#8225)
+Preferably through my discord (Wizzy#8225/wizardpuss)
 
 
 
